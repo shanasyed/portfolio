@@ -1,0 +1,371 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    border:5px solid white;
+   
+}
+.home{
+    width:100%;
+    height: 530px;
+    background-color: rgb(19, 2, 59);
+    display: flex;
+}    
+.navbar{
+    height: 60px;
+    width:100%;
+    background-color: rgb(19,2,59);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 1000;
+}  
+#links{
+    height: 100%;
+    width: 500px;
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.homepicture{
+    height: 300px;
+    width: 300px;
+    background-image: url("shana.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border:4px solid #ab33d6;
+    margin-right: 250px;
+    margin-top: 100px;
+    margin-left: 350px;
+    box-shadow: 0 0 15px #ab33d6;
+    transition: 0.3s;
+}
+.homeinfo{
+    width: auto;
+    margin-left: 250px;
+    margin-top: 100px;   
+}
+.white{
+    color:white;
+}
+.purple{
+    color:#ab33d6;
+}
+.large{
+    font-size: 70px;
+}
+.medium{
+    font-size: 35px;
+}
+.medsmall{
+    font-size: 28px;
+}
+.small{
+    font-size: 20px;
+}
+#homeresume{
+    background-color: rgb(19,2,59);
+    border:none;
+    color:white;
+    border:2px solid white;
+    height:40px;
+    width:220px;
+    margin-top: 20px;
+    margin-left: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#hireme{
+    height:40px;
+    width:100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border:none;
+    background-color: #ab33d6;
+    cursor: pointer;
+}
+.homeiconbox{
+    height: 55px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.icon{
+    height: 55px;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.about{
+    height:500px;
+    width:auto;
+    padding-top: 50px;
+}
+.aboutinfo{
+    margin-left: 250px;
+}
+#knowmore{
+    height:40px;
+    width:150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #ab33d6;
+    cursor: pointer;
+}
+.bold{
+    font-weight: bold;
+}
+.aboutpicture{
+    height: 470px;
+    width: 470px;
+    background-image: url("girl.jpeg");
+    background-size: 140%;
+    position: absolute;
+    right: 250px;
+    top: 580px;
+}
+.skills{
+    height:350px;
+    width:100%;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:auto;
+    height:230px;
+    grid:2px;
+}
+.bars{
+    height: 55px;
+    width: 490px;
+    display: flex;
+    align-items: center;
+}
+.skillsinfo{
+    height: 350px;
+    width: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+}
+.progress{
+    height: 10px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.progressbar{
+    height: auto;
+    background-color: #ab33d6;
+    border-radius: 5px;
+}
+.projects{
+    height:400px;
+    width:auto;
+}
+.projectinfo{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.projectbox{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.projectwork{
+    height: 280px;
+    width:32%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+.projectimage{
+    height: 135px;
+    width: 95%;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.projectimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.workinfo{
+    margin-top: 12px;
+    margin-left: 15px;
+}
+.view{
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.resume{
+    width: auto;
+    height: 125px;
+    background-color: rgb(19,2,59);
+}
+.resumeinfo{
+    height: 125px;
+    margin-left: 250px;
+    margin-right: 250px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.resumeicon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color:rgb(59, 16, 161);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.downloadresume{
+    background-color:#ab33d6;
+    border:none;
+    color:white;
+    height:40px;
+    width:220px;
+    margin-left: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.contact{
+    height: 400px;
+    width: auto;
+}
+.contactinfo{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.contactbox{
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+ .contactbutton{
+    height: auto;
+    width: 23.5%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    transition: 0.3s;
+    display: flex;
+    border: none;
+    color: black;
+}
+.contacticon{
+    width: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.contactboxeachinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.respond{
+    height: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+.respondbox{
+    height: 130;
+    width: 50px;
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.sendmessage{
+    background-color:#ab33d6;
+    border:none;
+    color:white;
+    height:40px;
+    width:180px;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-right: 10px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.contactform{
+    display: flex;
+}
+.contactform input,
+.contactform textarea{
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+.contactform textarea{
+    grid-column: 1/4;
+    height: 130px;
+    resize:none;
+}
+.contactbutton:hover{
+    background-color: #a890b1;
+}
+.footer{
+    height: 300px;
+    width: auto;
+    background-color: rgb(19, 2, 59);
+}
+.footerinfo{
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex;
+}
+.footerinfobox{
+    height: auto;
+    width: 25%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.footericonbox{
+    display: flex;
+    width:200px;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
