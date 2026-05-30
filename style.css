@@ -12,7 +12,7 @@
 }
 .home{
     width:100%;
-    height: 530px;
+    min-height: 530px;
     background-color: rgb(19, 2, 59);
     display: flex;
 }    
@@ -367,5 +367,232 @@ a{
     justify-content: space-between;
     margin-top: 15px;
     align-items: center;
+}
+@media screen and (max-width:1024px){
+
+    .homeinfo,
+    .aboutinfo,
+    .skillsinfo,
+    .projectinfo,
+    .contactinfo,
+    .resumeinfo,
+    .footerinfo{
+        margin-left:50px;
+        margin-right:50px;
+    }
+
+    .homepicture{
+        margin-left:100px;
+        margin-right:50px;
+    }
+
+    .aboutpicture{
+        right:50px;
+    }
+
+    .downloadresume{
+        margin-left:100px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    #topname{
+        margin-left:20px !important;
+    }
+
+    .navbar{
+        height:auto;
+        flex-direction:column;
+        padding:10px;
+    }
+
+    #links{
+        position:static;
+        width:100%;
+        margin-top:10px;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .home{
+        height:auto;
+        flex-direction:column-reverse;
+        align-items:center;
+        text-align:center;
+        padding:120px 20px 40px;
+    }
+
+    .homeinfo{
+        margin:0;
+    }
+
+    .homepicture{
+        width:220px;
+        height:220px;
+        margin:0 0 30px 0;
+    }
+
+    .large{
+        font-size:50px;
+    }
+
+    .medium{
+        font-size:28px;
+    }
+
+    .medsmall{
+        font-size:22px;
+    }
+
+    .small{
+        font-size:16px;
+    }
+
+    .homeiconbox{
+        margin:auto;
+    }
+
+    .about{
+        height:auto;
+        padding:40px 20px;
+    }
+
+    .aboutinfo{
+        margin-left:0;
+    }
+
+    .aboutpicture{
+        position:static;
+        width:280px;
+        height:280px;
+        margin:30px auto;
+        background-position:center;
+    }
+
+    .skills{
+        height:auto;
+        padding:20px;
+    }
+
+    .skillsinfo{
+        margin:0;
+        height:auto;
+    }
+
+    .box{
+        height:auto;
+    }
+
+    .bars{
+        width:100%;
+    }
+
+    .progress{
+        width:220px;
+    }
+
+    .projects{
+        height:auto;
+        padding:20px;
+    }
+
+    .projectinfo{
+        margin:0;
+    }
+
+    .projectbox{
+        flex-direction:column;
+        height:auto;
+        gap:20px;
+    }
+
+    .projectwork{
+        width:100%;
+    }
+
+    .resume{
+        height:auto;
+        padding:20px;
+    }
+
+    .resumeinfo{
+        margin:0;
+        height:auto;
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .resumepara{
+        margin-left:0 !important;
+    }
+
+    .downloadresume{
+        margin-left:0;
+    }
+
+    .contact{
+        height:auto;
+        padding:20px;
+    }
+
+    .contactinfo{
+        margin:0;
+    }
+
+    .contactbox{
+        height:auto;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .contactbutton{
+        width:100%;
+        min-height:80px;
+    }
+
+    .respond{
+        height:auto;
+        padding:15px;
+    }
+
+    .contactform{
+        flex-direction:column;
+    }
+
+    .respondbox{
+        width:100%;
+        margin:5px 0;
+    }
+
+    .contactform textarea{
+        width:100%;
+    }
+
+    .sendmessage{
+        margin:20px auto;
+    }
+
+    .footer{
+        height:auto;
+        padding:30px 20px;
+    }
+
+    .footerinfo{
+        margin:0;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .footerinfobox{
+        width:100%;
+        margin-top:0;
+    }
 }
 
