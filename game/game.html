@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            min-height: 100vh;
+            min-width: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;  
+        }
+        .box{
+            height: 300px;
+            width: 500px;
+            background-color:rgba(0, 0, 0, 0.79) ;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            gap:15px;
+            flex-wrap: wrap;
+            
+        }
+        button{
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            background-color: rgba(180, 40, 8, 0.934);
+            font-size: 18px;
+            border: none;
+            border: 2px solid rgba(245, 222, 179, 0.815);
+        }
+        h1{
+            position: absolute;
+            top:153px;
+        }
+        #msg{
+            margin-top: 10px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>rock paper scissor</h1>
+    <div class="box">
+        <button id="rock">rock</button>
+        <button id="paper">paper</button>
+        <button id="scissor">scissor</button>
+    </div>
+    <p id="msg">choose any one</p>
+    <script src="game.js"></script>
+</body>
+</html>

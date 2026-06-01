@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    height:65px;
+    width:100%;
+    background-color:#010822;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.navbarlogo{
+    min-height:60px;
+    max-width:100px;
+    width: 100%;
+    background-image:url("amazon_logo.jpg");
+    background-size:200%;
+    background-position:center;  
+}
+.navbarlocation{
+    min-height: 60px;
+    width: 100%;
+    max-width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px; 
+}
+.locationicon{
+    min-height: 60px;
+    width: 100%;
+    max-width: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+.locationinfo{
+    min-height: 60px;
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.white{
+    color: white;
+}
+.navbarsearch{
+    min-height: 55px;
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: none;
+}
+.navbarselect{
+    min-height: 55px;
+    max-width: 40px;
+    width: 100%;
+    border: none;
+}
+.navbarsearch select{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.navbarinput{
+    min-height: 55px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbarsearchicon{
+     min-height: 55px;
+    max-width: 40px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(165, 118, 41);
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;    
+}
+.navbarsignin{
+    min-height: 55px;
+    max-width: 145px;
+    width: 100%;    
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.navbarsigninline2{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.navbarreturns{
+    min-height: 60px;
+    max-width: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.navbarcart{
+    min-height: 60px;
+    max-width: 60px;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navcart{
+    font-size: 12px;
+    font-weight: lighter;
+}
+.quickbar{
+    display: flex;
+    background-color: #021930;
+    min-height: 50px;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 65px;
+}
+.barlinks{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer
+}
+.centerimage{
+    min-height: 300px;
+    width: 100%;
+    background-image:url("gaming.jpg");
+    background-size:100% auto ;
+    background-position:center ; 
+    background-repeat: no-repeat;    
+}
+.shopping{
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    background-color: rgb(227, 221, 221);
+    padding: 20px;
+}
+.shoppingitems{
+    min-height:450px;
+    max-width: 400px;
+    background-size: cover; 
+    border: 1px solid black;   
+}
+.signin{
+    min-height: 100px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+.signinbutton{
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(165, 118, 41);
+    cursor: pointer
+}
+.back{
+    min-height: 40px;
+    width: 100%;
+    background-color: #2b3661;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+.moreaboutus{
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color:#021930;
+}
+.footerbox{
+    height: auto;
+    width: auto;
+    margin: 40px;
+    display: grid;
+    row-gap: 8px;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .navbarlogo{
+        max-width: 80px;
+    }
+
+    .navbarlocation{
+        max-width: 90px;
+    }
+
+    .navbarsignin{
+        max-width: 120px;
+        font-size: 12px;
+    }
+
+    .navbarreturns{
+        max-width: 60px;
+        font-size: 12px;
+    }
+
+    .navbarcart{
+        max-width: 50px;
+        font-size: 20px;
+    }
+
+    .navbarsearch{
+        width: 100%;
+        order: 1;
+    }
+
+    .quickbar{
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 15px;
+        margin-top: 120px;
+    }
+
+    .shopping{
+        grid-template-columns: 1fr;
+    }
+
+    .shoppingitems{
+        min-height: 250px;
+        max-width: 100%;
+    }
+
+    .centerimage{
+        min-height: 200px;
+        background-size: cover;
+    }
+
+    .moreaboutus{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footerbox{
+        margin: 15px 0;
+    }
+}
+@media (max-width: 768px){
+
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .navbarlogo{
+        max-width: 80px;
+    }
+
+    .navbarlocation{
+        max-width: 90px;
+    }
+
+    .navbarsignin{
+        max-width: 120px;
+        font-size: 12px;
+    }
+
+    .navbarreturns{
+        max-width: 60px;
+        font-size: 12px;
+    }
+
+    .navbarcart{
+        max-width: 50px;
+        font-size: 20px;
+    }
+
+    .navbarsearch{
+        width: 100%;
+        order: 1;
+    }
+
+    .quickbar{
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 15px;
+        margin-top: 120px;
+    }
+
+    .shopping{
+        grid-template-columns: 1fr;
+    }
+
+    .shoppingitems{
+        min-height: 250px;
+        max-width: 100%;
+    }
+
+    .centerimage{
+        min-height: 200px;
+        background-size: cover;
+    }
+
+    .moreaboutus{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footerbox{
+        margin: 15px 0;
+    }
+}
