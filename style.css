@@ -3,23 +3,33 @@
     padding:0px;
     box-sizing:border-box;
     scroll-behavior: smooth;
+    font-family:'Poppins',sans-serif;
+}
+:root{
+    --primary:#7c3aed;
+    --secondary:#9333ea;
+    --dark:#0f172a;
+    --light:#f8fafc;
+    --card:#ffffff;
 }
 .main{
     min-height: 100vh;
     width: 100%;
-    border:5px solid white;
-   
+    border:5px solid white;   
 }
 .home{
     width:100%;
-    min-height: 530px;
-    background-color: rgb(19, 2, 59);
-    display: flex;
-}    
+    min-height:75vh;
+    background-color:var(--dark);
+    display:flex;
+    /* justify-content: space-betweens; */
+    align-items:center;
+}
 .navbar{
     height: 60px;
     width:100%;
-    background-color: rgb(19,2,59);
+    background-color:var(--dark);
+    backdrop-filter:blur(10px);
     display: flex;
     align-items: center;
     position: fixed;
@@ -42,28 +52,29 @@ a{
     text-decoration: none;
 }
 .homepicture{
-    height: 300px;
     width: 300px;
+    height: 300px;
     background-image: url("shana.jpg");
     background-size: cover;
     border-radius: 50%;
-    border:4px solid #ab33d6;
-    margin-right: 250px;
-    margin-top: 100px;
-    margin-left: 350px;
-    box-shadow: 0 0 15px #ab33d6;
+    border:4px solid var(--secondary);
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    box-shadow: 0 0 15px var(--secondary);
     transition: 0.3s;
+    border: 1px solid white;
 }
 .homeinfo{
     width: auto;
+    height: auto;
     margin-left: 250px;
-    margin-top: 100px;   
 }
 .white{
-    color:white;
+    color:var(--card);
 }
 .purple{
-    color:#ab33d6;
+    color:var(--primary);
 }
 .large{
     font-size: 70px;
@@ -78,10 +89,10 @@ a{
     font-size: 20px;
 }
 #homeresume{
-    background-color: rgb(19,2,59);
+    background-color: var(--dark);
     border:none;
-    color:white;
-    border:2px solid white;
+    color:var(--card);
+    border:2px solid var(--card);
     height:40px;
     width:220px;
     margin-top: 20px;
@@ -95,7 +106,7 @@ a{
     margin-top: 20px;
     border-radius: 5px;
     border:none;
-    background-color: #ab33d6;
+    background-color: var(--secondary);
     cursor: pointer;
 }
 .homeiconbox{
@@ -113,12 +124,15 @@ a{
     font-size: 35px;
 }
 .about{
-    height:500px;
-    width:auto;
-    padding-top: 50px;
+    min-height:50vh;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
 }
 .aboutinfo{
-    margin-left: 250px;
+    width:auto;
+    height: auto;
+    margin-left:250px;
 }
 #knowmore{
     height:40px;
@@ -135,14 +149,19 @@ a{
     height: 470px;
     width: 470px;
     background-image: url("girl.jpeg");
-    background-size: 140%;
-    position: absolute;
-    right: 250px;
-    top: 580px;
+    padding-left: auto;
+    background-size:cover;
+    margin-right: 250px;
 }
 .skills{
-    height:350px;
+    min-height:40vh;
     width:100%;
+}
+.skillsinfo{
+    height: auto;
+    width: auto;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 .box{
     display: flex;
@@ -158,32 +177,28 @@ a{
     display: flex;
     align-items: center;
 }
-.skillsinfo{
-    height: 350px;
-    width: auto;
-    margin-left: 250px;
-    margin-right: 250px;
-}
 .middle{
     display: flex;
     flex-direction: column;
 }
 .progress{
-    height: 10px;
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 5px;
-}
-.progressbar{
-    height: auto;
+    height: 9px;
     background-color: #ab33d6;
     border-radius: 5px;
 }
+.progressbar{
+    height: 10px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
 .projects{
-    height:400px;
-    width:auto;
+    min-height:70vh;
+    width:100%;
 }
 .projectinfo{
+    width:auto;
+    height: auto;
     margin-left: 250px;
     margin-right: 250px;
 }
@@ -204,7 +219,6 @@ a{
 }
 .projectimage{
     height: 135px;
-    width: 95%;
     margin-top: 8px;
     margin-left: 8px;
     border-radius: 6px;
@@ -228,12 +242,12 @@ a{
 .resume{
     width: auto;
     height: 125px;
-    background-color: rgb(19,2,59);
+    background-color:var(--dark);
 }
 .resumeinfo{
     height: 125px;
-    margin-left: 250px;
-    margin-right: 250px;
+    width: min(1200px, 90%);
+    margin: auto;
     width: auto;
     display: flex;
     align-items: center;
@@ -259,12 +273,12 @@ a{
     cursor: pointer;
 }
 .contact{
-    height: 400px;
+    min-height: 400px;
     width: auto;
 }
 .contactinfo{
-    margin-left: 250px;
-    margin-right: 250px;
+    width:min(1200px,90%);
+    margin:auto;
 }
 .contactbox{
     height: 80px;
@@ -346,13 +360,13 @@ a{
     background-color: #a890b1;
 }
 .footer{
-    height: 300px;
+    min-height: 300px;
     width: auto;
-    background-color: rgb(19, 2, 59);
+    background-color:var(--dark);
 }
 .footerinfo{
-    margin-left: 250px;
-    margin-right: 250px;
+    width:min(1200px,90%);
+    margin:auto;
     display: flex;
 }
 .footerinfobox{
@@ -368,7 +382,140 @@ a{
     margin-top: 15px;
     align-items: center;
 }
-@media screen and (max-width:1024px){
+section{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:2000;
+    overflow-y:auto;
+}
+
+.popup-content{
+    width:70%;
+    max-width:1000px;
+    background:white;
+    margin:40px auto;
+    padding:30px;
+    border-radius:15px;
+    position:relative;
+}
+
+.close-btn{
+    position:absolute;
+    top:15px;
+    right:25px;
+    font-size:35px;
+    cursor:pointer;
+    color:#ab33d6;
+}
+
+.popup h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.popup-profile{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.popup-profile img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ab33d6;
+}
+
+.popup-section{
+    margin-top:25px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+}
+
+.popup-section h3{
+    color:#ab33d6;
+    margin-bottom:12px;
+}
+
+.popup-section p{
+    line-height:1.8;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill-tags span{
+    background:#ab33d6;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.interest-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.interest-box div{
+    background:#f4f4f4;
+    padding:10px 15px;
+    border-radius:8px;
+}
+button{
+    transition:all .3s ease;
+}
+
+#hireme:hover,
+#knowmore:hover,
+.sendmessage:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(124,58,237,.4);
+}
+
+.view:hover{
+    transform:translateX(5px);
+}
+.contactbutton:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+#links a{
+    position:relative;
+}
+
+#links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:var(--primary);
+    transition:.3s;
+}
+
+#links a:hover::after{
+    width:100%;
+}
+.homepicture:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 30px var(--primary);
+}
+ @media screen and (max-width:1024px){
 
     .homeinfo,
     .aboutinfo,
@@ -407,7 +554,9 @@ a{
 
     .navbar{
         height:auto;
+        display: flex;
         flex-direction:column;
+        align-items: center;
         padding:10px;
     }
 
@@ -493,7 +642,7 @@ a{
         width:100%;
     }
 
-    .progress{
+    .progressbar{
         width:220px;
     }
 
@@ -594,5 +743,25 @@ a{
         width:100%;
         margin-top:0;
     }
+    .popup-content{
+        width:95%;
+        padding:20px;
+    }
+
+    .popup-top{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .popup-image{
+        width:180px;
+        height:180px;
+    }
+
+    .popup-grid{
+        grid-template-columns:1fr;
+    }
+
 }
+
 

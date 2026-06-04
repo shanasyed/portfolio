@@ -1,5 +1,17 @@
-const form=document.getElementById("contactform");
-const successmessage=document.getElementById("successmessage");
-form.addEventListener("submit",function(){
-    successmessage.innerText="message sent  successfully";
+const knowMore = document.getElementById("knowmore");
+const popup = document.getElementById("aboutPopup");
+const closeBtn = document.querySelector(".close-btn");
+
+knowMore.addEventListener("click", () => {
+    popup.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if(e.target === popup){
+        popup.style.display = "none";
+    }
 });
