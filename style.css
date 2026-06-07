@@ -54,8 +54,8 @@ a{
 .homepicture{
     width: 300px;
     height: 300px;
-    background-image: url("shana.jpg");
-    background-size: cover;
+    background-image: url("shana.jpeg");
+    background-size:95%;
     border-radius: 50%;
     border:4px solid var(--secondary);
     position: absolute;
@@ -153,6 +153,26 @@ a{
     background-size:cover;
     margin-right: 250px;
 }
+#myinfo{
+    display: flex;
+    column-gap: 20px;
+    width: auto;
+    justify-content: space-between;
+}
+.myinfokey{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.myinfovalue{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 60%;
+}
 .skills{
     min-height:40vh;
     width:100%;
@@ -240,14 +260,19 @@ a{
     cursor: pointer;
 }
 .resume{
-    width: auto;
-    height: 125px;
+    width: 100%;
+    min-height: 125px;
     background-color:var(--dark);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 250px;
+    padding-right: 250px;
+    align-items: center;
 }
 .resumeinfo{
-    height: 125px;
-    width: min(1200px, 90%);
-    margin: auto;
+    height: 100%;
+    /* width: min(1200px, 90%); */
+    justify-content: center;
     width: auto;
     display: flex;
     align-items: center;
@@ -268,17 +293,20 @@ a{
     color:white;
     height:40px;
     width:220px;
-    margin-left: 300px;
     border-radius: 8px;
     cursor: pointer;
 }
 .contact{
     min-height: 400px;
-    width: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .contactinfo{
-    width:min(1200px,90%);
-    margin:auto;
+    height: auto;
+    width: 100%;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 .contactbox{
     height: 80px;
@@ -360,14 +388,17 @@ a{
     background-color: #a890b1;
 }
 .footer{
-    min-height: 300px;
-    width: auto;
+    min-height: 45vh;
+    width: 100%;
     background-color:var(--dark);
 }
 .footerinfo{
-    width:min(1200px,90%);
-    margin:auto;
+    /* width:min(1200px,90%); */
+    width: auto;
+    margin-left: 150px;
+    margin-right: 150px;
     display: flex;
+    justify-content: center;
 }
 .footerinfobox{
     height: auto;
@@ -382,7 +413,11 @@ a{
     margin-top: 15px;
     align-items: center;
 }
-section{
+.about,
+.skills,
+.projects,
+.resume,
+.contact{
     padding-top:20px;
     padding-bottom:20px;
 }
@@ -401,7 +436,7 @@ section{
 .popup-content{
     width:70%;
     max-width:1000px;
-    background:white;
+    background:white; 
     margin:40px auto;
     padding:30px;
     border-radius:15px;
@@ -547,6 +582,16 @@ button{
     body{
         overflow-x:hidden;
     }
+    /* .homeinfo,
+    .aboutinfo,
+    .skillsinfo,
+    .projectinfo,
+    .contactinfo,
+    .resumeinfo,
+    .footerinfo{
+        margin-left:20px;
+        margin-right:20px;
+    } */
 
     #topname{
         margin-left:20px !important;
@@ -554,9 +599,11 @@ button{
 
     .navbar{
         height:auto;
+        width: 100%;
         display: flex;
         flex-direction:column;
         align-items: center;
+        justify-content: flex-start;
         padding:10px;
     }
 
@@ -571,10 +618,13 @@ button{
 
     .home{
         height:auto;
-        flex-direction:column-reverse;
+        display: flex;
+        flex-direction:column-reverse !important;
         align-items:center;
         text-align:center;
+        justify-content: center;
         padding:120px 20px 40px;
+
     }
 
     .homeinfo{
@@ -582,9 +632,11 @@ button{
     }
 
     .homepicture{
+        position: static;
         width:220px;
         height:220px;
-        margin:0 0 30px 0;
+        margin:30px auto 30px;
+
     }
 
     .large{
@@ -609,13 +661,37 @@ button{
 
     .about{
         height:auto;
-        padding:40px 20px;
+        padding:40px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .aboutinfo{
         margin-left:0;
+        width:100%;
+        text-align:left;
+        margin-left: 30px;
+    }
+    #myinfo{
+    display:flex;
+    width: auto;
+    /* flex-direction:column; */
+    margin-bottom:10px;
+    /* display:inline-block; */
     }
 
+    .myinfokey{
+        width: 79%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .myinfovalue{
+        width: 60%;
+    }
+    
     .aboutpicture{
         position:static;
         width:280px;
@@ -626,11 +702,12 @@ button{
 
     .skills{
         height:auto;
-        padding:20px;
+        /* padding:20px; */
+        display: flex;
     }
 
     .skillsinfo{
-        margin:0;
+        margin:0px;
         height:auto;
     }
 
@@ -658,7 +735,7 @@ button{
     .projectbox{
         flex-direction:column;
         height:auto;
-        gap:20px;
+        gap:30px;
     }
 
     .projectwork{
@@ -668,6 +745,9 @@ button{
     .resume{
         height:auto;
         padding:20px;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
     }
 
     .resumeinfo{
@@ -676,6 +756,7 @@ button{
         flex-direction:column;
         text-align:center;
         gap:20px;
+        line-height: 30px;
     }
 
     .resumepara{
@@ -751,6 +832,15 @@ button{
     .popup-top{
         flex-direction:column;
         text-align:center;
+    }
+
+    .popup-profile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popup-profile h2{
+        margin-bottom: 10px;
     }
 
     .popup-image{
